@@ -18,3 +18,5 @@ Character.prototype.fight = async function () {
     const endpoint = `/my/${encodeURIComponent(this.name)}/action/fight`;
     return callAPI(endpoint, 'POST', headers);
 };
+
+module.exports = { Character };
