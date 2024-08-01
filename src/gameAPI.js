@@ -36,8 +36,8 @@ const gameAPI = {
     
             return response.data;
         } catch (error) {
-            console.error('API call failed:', error);
-            throw error;
+            console.error(endpoint,'API call failed:', error.message);
+            return -1;
         }
     }
 }
